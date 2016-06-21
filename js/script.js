@@ -145,7 +145,7 @@ $(function(){
 			$('#rep1').html('C')
 			$('#rep2').html('C#')
 			$('#rep3').html('JavaScript')
-			$('#rep4').html('ActionScipt')
+			$('#rep4').html('ActionScript')
 
 			clic.removeClass('vert')
 			clic.removeClass('rouge')
