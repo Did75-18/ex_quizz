@@ -369,3 +369,36 @@ $(function(){
 
 })
 });
+
+
+///////
+
+var question1 = {
+	titre: "Combien de nains entourent Blanche Neige",
+	reponses: [
+		3, 4, 7, 9
+	],
+	bonneReponse: reponses[2],
+	ReponsesUtilisateur []
+	
+};
+
+var questions = [
+	question1, question2
+];
+
+//// selectionner le premier élément du tableau questions et le mettre dans le html
+
+/// Déclarer une variable qui stocle la question en cours (1)
+
+/// Afficher titre de la question
+///Afiicher les réponses de la question
+/// Comparer le clic de la personne a la valeur "bonneReponse" de la question
+/// Si bonne reponse, classe verte, sinon classe rouge
+
+//Si clic sur suivant, 
+
+/// Enregister dans un tableau la question et les réponses de l'utilisateur
+/// remplacer question par element suivant du tableau Questions
+
+
