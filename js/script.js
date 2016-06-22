@@ -6,6 +6,7 @@ $(function(){
 
 
 
+
     if(change === 0){
 		$('#question1').show()
 		$('#rep1').html('5')
@@ -20,13 +21,14 @@ $(function(){
 	var choix1 = this.id;
 		
 	if(choix1 === 'rep3'){
-            clic.addClass('vert');
+            var choixOK1 = clic.addClass('vert');
     	}
     	else if(choix1 === 'rep1' || choix1 === 'rep2' || choix1 === 'rep4'){
             clic.addClass('rouge');
     	}
 
 	change++;
+	console.log(change);
 
 	$('#next').on('click', function(){
 
@@ -267,20 +269,23 @@ $(function(){
         		clic.removeClass('rouge')
 
 				if( choix10 === 'rep4'){
-    				clic.addClass('vert');
+    				var choixOk10 = clic.addClass('vert');
     			}
     			else if(choix10 === 'rep1' || choix10 === 'rep2' || choix10 === 'rep3'){
-    				clic.addClass('rouge');
+    				var choixOk10 = clic.addClass('rouge');
     			}
     		})
 		};
 	})
 
-/*	$('#prev').on('click', function(){
+	/*$('#prev').on('click', function(){
 
-		clic.removeClass('vert')
-        clic.removeClass('rouge')
+		//clic.removeClass('vert')
+        //clic.removeClass('rouge')
+        //change--;
+		//console.log(change);
 
+		
 		if(change === 0){
 			$('#question2').hide()
 			$('#question1').show()
@@ -289,9 +294,9 @@ $(function(){
 			$('#rep3').html('7')
 			$('#rep4').html('8')
 			change--;
-			console.log(change);
+			
 		}
-		else if(change === 1){	
+		else if(change === 3){	
 			$('#question3').hide()
 			$('#question2').show()
 			$('#rep1').html('Brad Pitt')
@@ -299,8 +304,9 @@ $(function(){
 			$('#rep3').html('Ronald McDonald')
 			$('#rep4').html('Alan Turing')
 			change--;
+		
 		}
-		else if(change === 2){
+		else if(change === 4){
 			$('#question4').hide()
 			$('#question3').show()
 			$('#rep1').html('Jaune')
@@ -308,8 +314,9 @@ $(function(){
 			$('#rep3').html('Rouge')
 			$('#rep4').html('Noir')
 			change--;
+			
 		}
-		else if(change === 3){
+		else if(change === 5){
 			$('#question5').hide()
 			$('#question4').show()
 			$('#rep1').html('Le père d\'Alexandre Dumas')
@@ -317,8 +324,9 @@ $(function(){
 			$('#rep3').html('Le fils d\'Alexandre Dumas')
 			$('#rep4').html('Le neveu d\'Alexandre Dumas')
 			change--;
+			
 		}
-		else if(change === 4){
+		else if(change === 6){
 			$('#question6').hide()
 			$('#question5').show()
 			$('#rep1').html('99')
@@ -326,16 +334,18 @@ $(function(){
 			$('#rep3').html('101')
 			$('#rep4').html('102')
 			change--;
+			
 		}
-		else if(change === 5){
+		else if(change === 7){
 			$('#question7').hide()
 			$('#question6').show()
 			$('#rep1').html('C')
 			$('#rep2').html('C#')
 			$('#rep3').html('JavaScript')
 			change--;
+			
 		}
-		else if(change === 6){
+		else if(change === 8){
 			$('#question8').hide()
 			$('#question7').show()
 			$('#rep4').html('Java')
@@ -344,8 +354,9 @@ $(function(){
 			$('#rep3').html('28')
 			$('#rep4').html('32')
 			change--;
+			
 		}
-		else if(change === 7){
+		else if(change === 9){
 			$('#question9').hide()
 			$('#question8').show()
 			$('#rep1').html('Suède')
@@ -353,15 +364,20 @@ $(function(){
 			$('#rep3').html('Danemark')
 			$('#rep4').html('Finlande')
 			change--;
+			
 		}
-		else if(change === 8){
+		else if(change === 10){
 			$('#question10').hide()
 			$('#question9').show()
 			$('#rep1').html('Jaune')
 			$('#rep2').html('Vert')
 			$('#rep3').html('violet')
 			$('#rep4').html('Marron')
-			change--;	
+			var choixOk10;
+			change--;
+			console.log(change);
+			console.log(choixOk10);
+			
 		}
 	})*/
 
@@ -373,19 +389,19 @@ $(function(){
 
 ///////
 
-var question1 = {
-	titre: "Combien de nains entourent Blanche Neige",
-	reponses: [
-		3, 4, 7, 9
-	],
-	bonneReponse: reponses[2],
-	ReponsesUtilisateur []
+//var question1 = {
+//	titre: "Combien de nains entourent Blanche Neige",
+//reponses: [
+	//	3, 4, 7, 9
+//	],
+//	bonneReponse: reponses[2],
+//	ReponsesUtilisateur []
 	
-};
+///};
 
-var questions = [
-	question1, question2
-];
+//var questions = [
+//	question1, question2
+//];
 
 //// selectionner le premier élément du tableau questions et le mettre dans le html
 
